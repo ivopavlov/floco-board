@@ -19,12 +19,12 @@ import { Button } from "./ui/button";
 const BACKGROUND_IMAGES = [
   {
     id: "1",
-    url: "/bg-1.png",
+    url: "bg-1.png",
     alt: "Mountain Landscape",
   },
   {
     id: "2",
-    url: "/bg-2.png",
+    url: "bg-2.png",
     alt: "Forest Path",
   },
 ];
@@ -66,7 +66,11 @@ export function BackgroundGalleryDialog() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline" size="icon" className="cursor-pointer">
+        <Button
+          variant="secondary"
+          size="icon"
+          className="cursor-pointer bg-background/30"
+        >
           <Wallpaper />
         </Button>
       </DialogTrigger>
